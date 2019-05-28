@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+    <title>Replicate_Assingment-2</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+
+    body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        font-family: Arial,sans-serif;
+    }
+
+    .fixedwidth {
+        margin-left: 255px; 
+    }
+
+    #top {
+        width: 100%;
+        background-color: white;
+        height: 157px;
+        float: bottom;
+    }
+
+    #bar1 {
+        width: 100%;
+        background-color: #D83230;
+        height: 340px;
+        float: bottom;
+    }
+
+    #welcome {
+        color: white;
+        font-size: 120%;
+        padding-top:10px;
+        padding-left: 5px;
+        letter-spacing: 0.3px; 
+    }
+
+    #signin {
+        color: white;
+        font-size: 36px;
+        font-family: BrandonText-Medium,Arial,sans-serif;
+        padding-left: 5px;
+    }
+
+    #sign_box {
+        float: left;
+        width: 320px;
+        height: 240px;
+        background-color: #AD2826;
+        color: white;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    #emailinput{
+        background-color: white;
+        color: grey;
+        width: 270px;
+        height: 30px;
+        font-size: 90%;
+        padding-left: 10px;
+        margin: 17px;
+    }
+    #password{
+        background-color: white;
+        color: grey;
+        width: 270px;
+        height: 30px;
+        font-size: 90%;
+        padding-left: 10px;
+        margin: 0 17px 17px 17px;
+        position: relative;
+        top: -7px;
+    }
+
+    #check {
+        margin-left: 23px;
+        width:20px;
+        height:20px;
+        position: relative;
+        top: -18px;
+    }
+
+    .button {
+        width: 285px;
+        background-color: #F28005;
+        border: none;
+        color: white;
+        padding: 12px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 17px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
+        font-size: 110%;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: #F64F1C;
+        opacity: 0.8;
+        }
+
+    .acc {
+        color: white;
+        font-size: 78%;
+        margin-left: 17px;
+    }
+
+    #teachers {
+        float: left;
+        width: 320px;
+        height: 190px;
+        background-color: #AD2826;
+        color: white;
+        margin-left: 15px;
+        margin-top: 55px;
+    }
+
+    #parents {
+        float: left;
+        width: 320px;
+        height: 190px;
+        background-color: #AD2826;
+        color: white;
+        margin-left: 15px;
+        margin-top: 55px;
+    }
+
+    .button1 {
+        width: 285px;
+        background-color: #3ABAAC;
+        border: none;
+        text-align: center;
+        padding: 12px 27px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        margin: 0 22px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    .button1:hover {
+        background-color: #3197DB;
+        }
+
+    .button2 {
+        width: 285px;
+        background-color: #F28005;
+        border: none;
+        text-align: center;
+        padding: 12px 27px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        margin: 0 22px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+    .button2:hover {
+        background-color: #F64F1C;
+    }
+
+    #bar2 {
+        width: 100%;
+        height: 25px;
+        background-color: #AD2826;
+    }
+
+    #bar3 {
+        width: 100%;
+        height: 439px;
+        background-color: #3ABAAC;
+        margin-top: 4px;
+    }
+
+    .header1 {
+        text-align: center;
+        font-size: 2.4rem;
+        color: white;
+        padding-top: 30px;
+    }
+
+    #video1 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #bar4 {
+        width: 100%;
+        height: 420px;
+        background-color: white;
+    }
+
+    .header2 {
+        color: #d83230;
+        text-align: center;
+        margin-top: 45px;
+        font-size: 36px;
+        font-family: BrandonText-Regular, Arial, sans-serif;
+    }
+
+    #bar5 {
+        width: 100%;
+        height: 500px;
+        background-color: #F4F1EA;
+    }
+
+    #teacher1 {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .header3 {
+        color: #d83230;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 36px;
+        font-family: BrandonText-Regular, Arial, sans-serif;
+    }
+
+    .video2 {
+        margin-left: 260px;
+        margin-top: 15px;
+        float: left;
+    }
+
+    #bar6 {
+        width: 100%;
+        height: 250px;
+        background-color: white;
+    }
+
+    .vertical-menu {
+        width: 300px;
+        height: 389px;
+        overflow-y: auto;
+        float: left;
+        margin-top: 17px;
+    }
+
+    .vertical-menu a {
+        background-color: white;
+        color: black;
+        padding: 5px 15px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+        opacity: 0.7;
+    }
+
+    .header4 {
+        color: #d83230;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 36px;
+        font-family: BrandonText-Regular, Arial, sans-serif;
+    }
+
+    #shop {
+        margin-left: 255px;
+        margin-top: 20px;
+
+    }
+
+    #bar7 {
+        width: 100%;
+        height: 260px;
+        background-color: #F4F1EA;
+    }
+
+    .header5 {
+        color: #d83230;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 36px;
+        font-family: BrandonText-Regular, Arial, sans-serif;
+    }
+
+    #teacher2 {
+        float: left;
+        width: 520px;
+        height: 160px;
+        background-color: transparent;
+        color: #3FB0EB;
+        font-size: 130%;
+        margin-left: 230px;
+    }
+
+    .button3 {
+        width: 480px;
+        background-color: #3ABAAC;
+        border: none;
+        text-align: center;
+        padding: 12px 27px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        margin: 0 22px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    #parent2 {
+        float: left;
+        width: 520px;
+        height: 160px;
+        background-color: transparent;
+        color: #F28005;
+        font-size: 130%;
+    }
+
+    .button4 {
+        width: 480px;
+        background-color: #F28005;
+        border: none;
+        text-align: center;
+        padding: 12px 27px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+        margin: 0 22px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    #bar8 {
+        width: 100%;
+        height: 450px;
+        background-color: white;
+    }
+
+
+    </style>    
+</head>
+
+<body>
+<div id="top">
+
+    <div class="fixedwidth">
+
+        <img style="position: relative; top: 10px;" src="images/book.png" width="170px"/>
+
+        <img style="position: relative; top: 63px; right: 175px;" src="images/Schlogo.png" width="300px"/>
+
+        <img style="position: relative; left: 250px; top: 63px;" src="images/childlogo.png" width="280px"/>
+
+    </div>
+
+</div>
+
+<div id="bar1">
+
+    <div class="fixedwidth">
+    
+        <div id="welcome">Welcome Back!</div>
+        <div id="signin">SIGN IN</div>
+
+        <div class="left">
+
+            <div id="sign_box">
+
+                <form id="form">
+                
+                <input id="emailinput" type="text" placeholder="Scholastic Account Email" />
+
+                <input id="password" type="text" placeholder="Scholastic Account Password" />
+
+                <input id="check" type="checkbox" /> <div style="float: right;position: relative;right: 185px; top: -16px; font-size: 78%;">Remember Me.</div> <div style="float: right;position: relative; right: 80px; top: -32px; font-size: 65%;">(Not recommended for public computers.)
+            </div>
+
+            </form>
+
+            <input type="button" class="button" value="SIGN IN">
+
+            <a class="acc" href="#">Forgot your account information?</a>
+                
+            </div>
+
+            <div id="teachers">
+
+                <p style="text-align: center; padding-top: 25px; font-size: 155%;">TEACHERS</p>
+
+                <input class="button1" type="button" value="CREATE AN ACCOUNT">
+                
+            </div>
+
+            <div id="parents">
+
+                <p style="text-align: center; padding-top: 25px; font-size: 155%;">PARENTS</p>
+
+                <input class="button2" type="button" value="GET STARTED">
+                
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+<div id="bar2"></div>
+
+<div id="bar3">
+
+        <div class="header1">When Children Love to Read, the Future Is an Open Book</div>
+
+        <div id="video1">
+
+            <img src="images/video1.png" width="1000px;">
+            
+        </div>
+
+</div>
+
+<div id="bar4">
+
+    <div class="header2">How to Grow the Love of Reading</div>
+    
+    <div id="teacher1">
+
+        <img src="images/teachers.png" width="1000px">
+        
+    </div>
+
+</div>
+
+<div id="bar5">
+
+    <div class="header3">How to Get Started</div>
+
+    <a href="#"><img class="video2" src="images/video2.png" width="700px"></a>
+
+    <div class="vertical-menu">
+        <a href="#"><img style="padding-top: 15px;" src="images/sub_video1.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video2.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video3.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video4.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video5.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video6.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video7.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video8.png" width="250px"></a>
+        <a href="#"><img src="images/sub_video9.png" width="250px"></a>
+</div>
+    
+</div>
+
+<div id="bar6">
+
+    <div class="header4">Exclusively for Teachers</div>
+
+    <div id="shop">
+        <a href="#"><img src="images/shop.png" width="1000px"></a>
+    </div>
+    
+</div>
+
+<div id="bar7">
+
+    <div class="header5">Let's Get Reading</div>
+
+    <div id="teacher2">
+
+        <p style="text-align: center; padding-top: 5px; font-size: 155%;">TEACHERS</p>
+            <input class="button3" type="button" value="CREATE AN ACCOUNT">
+        
+    </div>
+
+    <div id="parent2">
+
+        <p style="text-align: center; padding-top: 5px; font-size: 155%;">TEACHERS</p>
+            <input class="button4" type="button" value="GET STARTED">
+        
+    </div>
+    
+</div>
+
+<div id="bar8">
+
+    <img style="margin-top: 100px;" src="images/contacts.png" width="100%">
+    
+</div>
+
+</body>
+</html>
